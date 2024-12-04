@@ -1,0 +1,55 @@
+﻿@{
+    var user = Session["user"] as QLHOCSINH.Models.ACCOUNT;
+}
+<div class="side-nav">
+    <div class="side-nav-inner">
+        <ul class="side-nav-menu scrollable">
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-hdd"></i>
+                    </span>
+                    @if (user != null)
+                    {
+                        <span class="title">Xin chào : @user.email </span>
+                    }
+                    else
+                    {
+                        <span class="title">Xin chào : </span>
+                    }
+
+                </a>
+
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-hdd"></i>
+                    </span>
+                    <span class="title">Quản lý</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="/HocSinh/Index">Quản lý học sinh</a>
+                    </li>
+                    <li>
+                        <a href="/Lop/ViewLop">Quản lý lớp học</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <button onclick="Logout()">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-hdd"></i>
+                    </span>
+                    <span class="title">Logout</span>
+                </button>
+                
+
+            </li>
+        </ul>
+    </div>
+</div>

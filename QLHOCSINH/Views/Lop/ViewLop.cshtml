@@ -1,0 +1,312 @@
+﻿@{
+    ViewBag.Title = "QUẢN LÝ LỚP HỌC";
+}
+<div class="content">
+    <div class="page-header">
+        <div class="card">
+            <div class="card-body">
+                <h3 style="text-align:center; font-weight:bold">DANH SÁCH LỚP HỌC</h3>
+                <div class="row m-b-30">
+                    <div class="col-lg-2 text-right">
+                        <button class="btn btn-primary btn-tone m-r-5" data-toggle="modal" data-target="#exampleModal">
+                            <i class="anticon anticon-plus-circle m-r-5"></i>
+                            <span>Thêm mới lớp học</span>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <!--Thêm mới học sinh-->
+                    <div class="modal fade" id="exampleModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="width: 146%; margin-left: -70px; ">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">QUAN LY LOP HOC</h5>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <i class="anticon anticon-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container mt-5" style=" margin-right: 100px; ">
+                                        <div class="border rounded p-4 shadow" style="width: 666px; margin-top: -55px;">
+                                            <h1 class="text-center mb-4" style="font-weight: bold; padding-top: 15px; font-size: 38px;">TIẾP NHẬN LỚP MỚI</h1>
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-9">
+                                                    <form id="quadratic-form" action="/HocSinh/Add" method="post" style="width: 140%; margin-left: -92px;">
+                                                        <div class="form-title" style="color: blue; margin-bottom: -10px;">Thông tin lớp</div>
+                                                        <div class="form-group form-inline align-items-center border rounded p-4">
+                                                            <label class="text-start">Mã lớp :</label>
+                                                            <input type="text" name="MaLop" id="MaLop" class="form form-control" style=" width: 170px; margin-right: 18px;" disabled="" />
+                                                            <label class="text-start">Tên lớp :</label>
+                                                            <input type="text" name="TenLop" id="TenLop" class="form form-control" style=" width: 170px; margin-right: 18px;" />
+                                                        </div>
+
+                                                        <div style="float: right; padding-bottom: 35px;">
+                                                            <button type="button" class="btn btn-primary btn-tone m-r-5" style="width: 122px; height: 42px;" id="btnAdd">
+                                                                <i class="anticon anticon-diff"></i>
+                                                                Thêm mới
+                                                            </button>
+                                                            <button type="reset" class="btn btn-warning btn-tone m-r-5" style="width: 122px; height: 42px;" id="btnReset">
+                                                                <i class="anticon anticon-redo"></i>
+                                                                Reset
+                                                            </button>
+                                                            <button type="reset" class="btn btn-danger btn-tone m-r-5" style="width: 122px; height: 42px;" data-dismiss="modal" id="btnExit">
+                                                                <i class="anticon anticon-logout"></i>
+                                                                Thoát
+                                                            </button>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Edit học sinh-->
+                    <div class="modal fade" id="EditModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="width: 146%; margin-left: -70px; ">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">QUAN LY LOP HOC</h5>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <i class="anticon anticon-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container mt-5" style=" margin-right: 100px; ">
+                                        <div class="border rounded p-4 shadow" style="width: 666px; margin-top: -55px;">
+                                            <h1 class="text-center mb-4" style="font-weight: bold; padding-top: 15px; font-size: 38px;">CHỈNH SỬA LỚP HỌC</h1>
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-9">
+                                                    <form id="quadratic-form" action="/HocSinh/Edit" method="post" style="width: 140%; margin-left: -92px;">
+                                                        <div class="form-title" style="color: blue; margin-bottom: -10px;">Thông tin lớp</div>
+                                                        <div class="form-group form-inline align-items-center border rounded p-4">
+                                                            <label class="text-start">Mã Lớp :</label>
+                                                            <input type="text" name="EditMaLop" id="EditMaLop" class="form form-control" style=" width: 170px; margin-right: 18px;" disabled="" />
+                                                            <label class="text-start">Tên Lớp :</label>
+                                                            <input type="text" name="EditTenLop" id="EditTenLop" class="form form-control" />
+                                                        </div>
+
+                                                        <div style="float: right; padding-bottom: 35px;">
+                                                            <button type="button" class="btn btn-primary btn-tone m-r-5" style="width: 122px; height: 42px;" id="btnSaveEdit">
+                                                                <i class="anticon anticon-form"></i>
+                                                                Sửa
+                                                            </button>
+                                                            <button type="reset" class="btn btn-danger btn-tone m-r-5" style="width: 122px; height: 42px;" data-dismiss="modal" id="btnExitEdit">
+                                                                <i class="anticon anticon-logout"></i>
+                                                                Thoát
+                                                            </button>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="table-responsive">
+                    <table class="table table-hover e-commerce-table">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Mã lớp</th>
+                                <th>Tên lớp</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="showdata">
+                        </tbody>
+                    </table>
+                    <div id="pagination"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        LoadData("");
+
+        $("#btnAdd").click(function () {
+            if (validateAllInputs()) {
+                AddHocSinh();
+            }
+        });
+
+        $('#exampleModal').on('show.bs.modal', function (e) {
+            TangID();
+        });
+
+        $('#btnReset').click(function () {
+            resetForm();
+        });
+
+        $(document).on("click", ".btnEdit", function () {
+            var MaLop = $(this).closest("tr").find("td:eq(1)").text();
+            GetById(MaLop);
+        });
+
+        $("#btnSaveEdit").click(function () {
+            if (validateAllInputs(true)) {
+                UpdateHS();
+            }
+        });
+
+        $(document).on("click", ".btnDelete", function () {
+            var id = $(this).closest("tr").find("td:eq(1)").text();
+            var name = $(this).closest("tr").find("td:eq(2)").text();
+            if (confirm("Bạn có chắc muốn xóa lớp '" + name + "' không?")) {
+                DeleteHocSinh(id);
+            }
+        });
+    });
+
+    function LoadData() {
+        $.ajax({
+            url: '/Lop/GetLop',
+            type: 'GET',
+            success: function (res) {
+                var items = res.data;
+                var html = "";
+                if (items.length === 0) {
+                    html += "<tr><td colspan='9' class='text-center'>Không có dữ liệu</td></tr>";
+                } else {
+                    for (let i = 0; i < items.length; i++) {
+                        var index = i + 1;
+                        html += "<tr>";
+                        html += "<td>" + index + "</td>";
+                        html += "<td>" + items[i].MaLop + "</td>";
+                        html += "<td>" + items[i].TenLop + "</td>";
+                        html += "<td><button class='btn btn-icon btn-hover btn-sm btn-rounded pull-right btnEdit' data-toggle='modal' data-target='#EditModal'><i class='anticon anticon-edit'></i></button><button class='btn btn-icon btn-hover btn-sm btn-rounded pull-right btnDelete'><i class='anticon anticon-delete'></i></button></td>";
+                        html += "</tr>";
+                    }
+                }
+                $('#showdata').html(html);
+            }
+        });
+    };
+
+    function TangID() {
+        $.ajax({
+            url: '/Lop/GetMaxLop',
+            type: 'GET',
+            success: function (data) {
+                var maxId = data.maxId;
+                var newId = "L" + (maxId + 1);
+                $('#MaLop').val(newId);
+            }
+        });
+    };
+
+    function GetById(MaLop) {
+        $.ajax({
+            url: '/Lop/GetById',
+            type: 'GET',
+            data: { MaLop: MaLop },
+            success: function (res) {
+                $('#EditMaLop').val(res.data.MaLop);
+                $('#EditTenLop').val(res.data.TenLop);
+            }
+        });
+    };
+
+    function AddHocSinh() {
+        var MaLop = escapeInput($('#MaLop').val().trim());
+        var TenLop = escapeInput($('#TenLop').val().trim());
+
+        $.ajax({
+            type: 'POST',
+            url: '/Lop/Add',
+            dataType: 'JSON',
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({
+                MaLop: MaLop,
+                TenLop: TenLop
+            }),
+            success: function (response) {
+                alert(response.status);
+                LoadData();
+            },
+            error: function (response) {
+                alert(response.status);
+            },
+        });
+    };
+
+    function resetForm() {
+        $('#quadratic-form input[type="text"]').not('#MaLop').val('');
+        TangID();
+    };
+
+    function UpdateHS() {
+        var MaLop = escapeInput($('#EditMaLop').val().trim());
+        var TenLop = escapeInput($('#EditTenLop').val().trim());
+
+        var l = {
+            MaLop: MaLop,
+            TenLop: TenLop,
+        };
+
+        $.ajax({
+            type: 'POST',
+            url: '/Lop/Edit',
+            dataType: 'JSON',
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(l),
+            success: function (response) {
+                alert(response.status);
+                LoadData();
+            },
+        });
+    };
+
+    function DeleteHocSinh(id) {
+        $.ajax({
+            type: 'POST',
+            url: '/Lop/Delete',
+            data: { id: id },
+            success: function (response) {
+                alert(response.status);
+                LoadData();
+            },
+        });
+    };
+
+    function escapeInput(input) {
+        return input
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#x27;")
+            .replace(/\//g, "&#x2F;");
+    }
+
+    function validateAllInputs(isEdit = false) {
+        var inputs = isEdit ? $('#EditModal input[type="text"]') : $('#exampleModal input[type="text"]');
+        var isValid = true;
+
+        inputs.each(function () {
+            var value = $(this).val().trim();
+            if (/script/i.test(value)) {
+                alert("Không được nhập vào dạng script");
+                isValid = false;
+                return false;
+            }
+        });
+
+        return isValid;
+    }
+</script>
+

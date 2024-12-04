@@ -1,0 +1,6 @@
+1x² + -2x + 2
+Kết quả: Phương trình vô nghiệm
+2x² + 2x + 2
+Kết quả: Phương trình vô nghiệm
+-1x² + 1x + 1
+Kết quả: Phương trình có 2 nghiệm phân biệt x1 = -0.618034 và x2 = 1.618034

@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AnNinhMang\\QuanLyHocSinh-CNPM\\QLHOCSINH\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B6088313-2475-4AC8-9A3C-576991ED384E}|QLHOCSINH\\QLHOCSINH.csproj|d:\\anninhmang\\quanlyhocsinh-cnpm\\qlhocsinh\\qlhocsinh\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6088313-2475-4AC8-9A3C-576991ED384E}|QLHOCSINH\\QLHOCSINH.csproj|solutionrelative:qlhocsinh\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6088313-2475-4AC8-9A3C-576991ED384E}|QLHOCSINH\\QLHOCSINH.csproj|d:\\anninhmang\\quanlyhocsinh-cnpm\\qlhocsinh\\qlhocsinh\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6088313-2475-4AC8-9A3C-576991ED384E}|QLHOCSINH\\QLHOCSINH.csproj|solutionrelative:qlhocsinh\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6088313-2475-4AC8-9A3C-576991ED384E}|QLHOCSINH\\QLHOCSINH.csproj|d:\\anninhmang\\quanlyhocsinh-cnpm\\qlhocsinh\\qlhocsinh\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6088313-2475-4AC8-9A3C-576991ED384E}|QLHOCSINH\\QLHOCSINH.csproj|solutionrelative:qlhocsinh\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6088313-2475-4AC8-9A3C-576991ED384E}|QLHOCSINH\\QLHOCSINH.csproj|d:\\anninhmang\\quanlyhocsinh-cnpm\\qlhocsinh\\qlhocsinh\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6088313-2475-4AC8-9A3C-576991ED384E}|QLHOCSINH\\QLHOCSINH.csproj|solutionrelative:qlhocsinh\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6088313-2475-4AC8-9A3C-576991ED384E}|QLHOCSINH\\QLHOCSINH.csproj|d:\\anninhmang\\quanlyhocsinh-cnpm\\qlhocsinh\\qlhocsinh\\scripts\\ajax\\registerjs.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B6088313-2475-4AC8-9A3C-576991ED384E}|QLHOCSINH\\QLHOCSINH.csproj|solutionrelative:qlhocsinh\\scripts\\ajax\\registerjs.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\AnNinhMang\\QuanLyHocSinh-CNPM\\QLHOCSINH\\QLHOCSINH\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "QLHOCSINH\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\AnNinhMang\\QuanLyHocSinh-CNPM\\QLHOCSINH\\QLHOCSINH\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "QLHOCSINH\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAD0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T19:01:13.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterJS.js",
+              "DocumentMoniker": "D:\\AnNinhMang\\QuanLyHocSinh-CNPM\\QLHOCSINH\\QLHOCSINH\\Scripts\\Ajax\\RegisterJS.js",
+              "RelativeDocumentMoniker": "QLHOCSINH\\Scripts\\Ajax\\RegisterJS.js",
+              "ToolTip": "D:\\AnNinhMang\\QuanLyHocSinh-CNPM\\QLHOCSINH\\QLHOCSINH\\Scripts\\Ajax\\RegisterJS.js",
+              "RelativeToolTip": "QLHOCSINH\\Scripts\\Ajax\\RegisterJS.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-04T18:59:02.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\AnNinhMang\\QuanLyHocSinh-CNPM\\QLHOCSINH\\QLHOCSINH\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "QLHOCSINH\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\AnNinhMang\\QuanLyHocSinh-CNPM\\QLHOCSINH\\QLHOCSINH\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "QLHOCSINH\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAAFoAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T18:57:56.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminAreaRegistration.cs",
+              "DocumentMoniker": "D:\\AnNinhMang\\QuanLyHocSinh-CNPM\\QLHOCSINH\\QLHOCSINH\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeDocumentMoniker": "QLHOCSINH\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ToolTip": "D:\\AnNinhMang\\QuanLyHocSinh-CNPM\\QLHOCSINH\\QLHOCSINH\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeToolTip": "QLHOCSINH\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:30:15.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\AnNinhMang\\QuanLyHocSinh-CNPM\\QLHOCSINH\\QLHOCSINH\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "QLHOCSINH\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\AnNinhMang\\QuanLyHocSinh-CNPM\\QLHOCSINH\\QLHOCSINH\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "QLHOCSINH\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwB4BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:27:55.201Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

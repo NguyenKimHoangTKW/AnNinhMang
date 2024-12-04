@@ -1,0 +1,75 @@
+﻿﻿@{
+    ViewBag.Title = "Phương trình bậc 2";
+    Layout = null;
+}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .form-title {
+        margin-bottom: -12px;
+        margin-left: 19px;
+    }
+
+    .border {
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+    }
+</style>
+<div class="container mt-5" style=" margin-right: 100px; ">
+    <div class="border rounded p-4 shadow" style="width:666px">
+        <h1 class="text-center mb-4" style="font-weight:bold; padding-top: 15px">GIẢI PHƯƠNG TRÌNH BẬC 2</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <form id="quadratic-form" action="/PhuongTrinhBac2/PhuongTrinhBac2" method="post">
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true)
+                    <div class="form-title">Nhập các hệ số của pt</div>
+                    <div class="form-group form-inline align-items-center justify-content-center border rounded p-4">
+                        <input type="number" class="form-control mr-2" name="HeSo1" title="Vui lòng nhập hệ số a" style="width:70px" required step="any">
+                        <label for="input-a" class="mr-2" style="font-size: 25px;">x<sup>2</sup> + </label>
+                        <input type="number" class="form-control mr-2" name="HeSo2" style="width:70px" required step="any">
+                        <label for="input-b" class="mr-2" style="font-size: 25px;"> x + </label>
+                        <input type="number" class="form-control" name="HeSo3" style="width:70px" required step="any">
+                        <label for="input-c" class="mr-2" style="font-size: 25px;"> = 0</label>
+                        <div style="padding-top: 20px;">
+                            @if (!string.IsNullOrEmpty(ViewData["KQLoi"] as string))
+                            {
+                                <p class="alert alert-danger">@ViewData["KQLoi"]</p>
+                            }
+
+                        </div>
+                    </div>
+                    <div class="form-title">Nghiệm của phương trình</div>
+                    <div class="form-group form-inline align-items-center justify-content-center border rounded p-4" id="result-container">
+
+                        <div id="result" class="mt-4 text-center">
+                            @if (!string.IsNullOrEmpty(ViewData["KetQua"] as string))
+                            {
+                                <b>@ViewData["KetQua"]</b>
+                            }
+                        </div>
+                    </div>
+                    <div style="float: right; padding-bottom: 35px;">
+                        <button type="submit" class="btn btn-success" style="width: 122px; height: 42px;">Giải PT</button>
+                        <button type="reset" class="btn btn-danger" style="width: 122px; height: 42px;">Reset</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    var resultContainer = document.getElementById('result-container');
+    var resetButton = document.querySelector('button[type="reset"]');
+    resetButton.addEventListener('click', function () {
+        resultContainer.innerHTML = '';
+    });
+
+
+</script>
